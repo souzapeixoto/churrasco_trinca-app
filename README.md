@@ -23,17 +23,13 @@ Caso não queira baixar e executar os códigos você pode apenas acessar: https:
 
 
 #TELAS DA APLICAÇÃO
-![5ea27676-c8e1-4d3b-b6cb-e2a149c03800](https://user-images.githubusercontent.com/10977966/134728566-e73a166f-fb68-460e-a333-733b5df49ec7.jpg)
+![5ea27676-c8e1-4d3b-b6cb-e2a149c03800](https://user-images.githubusercontent.com/10977966/134729032-07747b59-c860-402e-943e-7f3b7243518d.jpg)
+![008a6520-911f-47d4-a094-aa7add4bdf8a](https://user-images.githubusercontent.com/10977966/134729034-68735a7d-48b2-4327-8caa-2528f2f9c22c.jpg)
+![11dd691f-c28a-4f90-93f1-6304645ea52c](https://user-images.githubusercontent.com/10977966/134729035-190eb5a9-99a4-4561-8d00-b8a238baeaa5.jpg)
+![5408f537-d968-4cb0-8f5b-5a21248ce59e](https://user-images.githubusercontent.com/10977966/134729039-586487ac-77ee-4775-8fdd-5f1405644576.jpg)
+![89108a54-27d2-4cdd-bb90-d76ab44a25f3](https://user-images.githubusercontent.com/10977966/134729041-fcdc644f-d3bf-410e-938a-97a12eb75f16.jpg)
+![16092617-4155-41f3-a861-193e476e3180](https://user-images.githubusercontent.com/10977966/134729043-32114e6b-f59a-4c3d-93a0-ac6b9d1b1e9c.jpg)
 
-![008a6520-911f-47d4-a094-aa7add4bdf8a](https://user-images.githubusercontent.com/10977966/134728570-f8f6fa8c-f838-4def-b1eb-aa99633d2710.jpg)
-
-![11dd691f-c28a-4f90-93f1-6304645ea52c](https://user-images.githubusercontent.com/10977966/134728572-ea7d959a-13b6-4838-815c-4161d08db348.jpg)
-
-![5408f537-d968-4cb0-8f5b-5a21248ce59e](https://user-images.githubusercontent.com/10977966/134728574-147bb8ff-e82e-4c7c-9f67-aabab212b36e.jpg)
-
-![89108a54-27d2-4cdd-bb90-d76ab44a25f3](https://user-images.githubusercontent.com/10977966/134728578-30f8f9ee-758d-4070-9390-ee1ccad16203.jpg)
-
-![16092617-4155-41f3-a861-193e476e3180](https://user-images.githubusercontent.com/10977966/134728580-2c0ba1e8-8489-429f-aa92-05db796d61ad.jpg)
 
 
 
