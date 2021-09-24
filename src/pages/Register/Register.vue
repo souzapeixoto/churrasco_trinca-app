@@ -45,7 +45,7 @@
             <v-btn color="success" width="100%" @click="submit">
               Cadastrar
             </v-btn>
-
+            Senha deve ter no mínimo 6 digitos 1 letra maiúscula 1 minúscula, 1 Alfanumérico e 1 número de 0-9
             <v-divider class="my-2"></v-divider>
 
             <span class="caption grey--text font-weight-light"

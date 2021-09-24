@@ -44,19 +44,21 @@
                           chips
                         >
                           <template slot="selection" slot-scope="{ item }">
-                            {{ item.descricao }} (R$ {{ formatPrice(item.valor) }})
+                            {{ item.descricao }} (R$
+                            {{ formatPrice(item.valor) }})
                           </template>
                           <template slot="item" slot-scope="{ item }">
-                            {{ item.descricao }} (R$ {{ formatPrice(item.valor) }})
+                            {{ item.descricao }} (R$
+                            {{ formatPrice(item.valor) }})
                           </template>
                         </v-select>
                       </v-col>
-
-                      <v-col cols="12" sm="6" md="4">
-                        <v-text-field
+                      <v-col cols="12" sm="6" md="6">
+                        Valor Pago
+                        <money
                           v-model="editedItem.valorContribuicao"
-                          label="Valor Pago"
-                        ></v-text-field>
+                          v-bind="money"
+                        ></money>
                       </v-col>
 
                       <v-col cols="12" sm="6" md="4"> </v-col>
@@ -116,9 +118,19 @@
   </v-card>
 </template>
 <script>
+import { Money } from "v-money";
 export default {
+  components: { Money },
   data: () => ({
     dialog: false,
+    money: {
+      decimal: ",",
+      thousands: ".",
+      prefix: "R$ ",
+      suffix: "",
+      precision: 2,
+      masked: false,
+    },
     dialogDelete: false,
     headers: [
       {
@@ -207,7 +219,9 @@ export default {
     },
     montaDescricao(item) {
       if (item.opcao) {
-        return `${item.opcao.descricao} (R$ ${this.formatPrice(item.opcao.valor)})`;
+        return `${item.opcao.descricao} (R$ ${this.formatPrice(
+          item.opcao.valor
+        )})`;
       }
     },
     quitado(item) {
@@ -353,8 +367,8 @@ export default {
       }
     },
     formatPrice(value) {
-        let val = (value/1).toFixed(2).replace('.', ',')
-        return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")
+      let val = (value / 1).toFixed(2).replace(".", ",");
+      return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
     },
   },
 };

@@ -15,6 +15,8 @@ const routes = [
     component: Login,
     meta: { layout: "login" },
   },
+
+  { path: "/", redirect: "/churrascos" },
   {
     path: "/register",
     name: "register",
@@ -22,14 +24,21 @@ const routes = [
     meta: { layout: "register" },
   },
   { path: "/churrascos", name: "churrascos", component: Churrasco },
-  { path: "/churrascos/create", name: "createchurras", component: CreateChurras },
-  { path: "/churrascos/edit/:id", name: "editchurras", component: EditChurras,props: true },
-  
-
+  {
+    path: "/churrascos/create",
+    name: "createchurras",
+    component: CreateChurras,
+  },
+  {
+    path: "/churrascos/edit/:id",
+    name: "editchurras",
+    component: EditChurras,
+    props: true,
+  },
 ];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   routes, // short for `routes: routes`
 });
 

@@ -177,11 +177,11 @@
             </v-chip>
           </template>
         </v-combobox>
-        <v-btn color="primary" @click="salvar">
+        <v-btn class="mt-10" color="primary" @click="salvar">
           Salvar
         </v-btn>
 
-        <v-btn text @click="e1 > 1 ? (e1 = e1 - 1) : 1">
+        <v-btn class="mt-10" text @click="e1 > 1 ? (e1 = e1 - 1) : 1">
           Voltar
         </v-btn>
       </v-stepper-content>

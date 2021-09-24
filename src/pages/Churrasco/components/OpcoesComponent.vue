@@ -5,7 +5,7 @@
       <v-data-table :headers="headers" :items="opcoes" class="elevation-1">
         <template v-slot:top>
           <v-toolbar flat>
-            <v-toolbar-title>Opções de contribuição</v-toolbar-title>
+            <v-toolbar-title>Exemplo: Com bebida, Sem bebida...</v-toolbar-title>
             <v-divider class="mx-4" inset vertical></v-divider>
             <v-spacer></v-spacer>
             <v-dialog v-model="dialog" max-width="500px">
@@ -28,13 +28,14 @@
                 <v-card-text>
                   <v-container>
                     <v-row>
-                      <v-col cols="12" sm="6" md="4">
+                      <v-col cols="12" sm="6" md="6">
                         <v-text-field
                           v-model="editedItem.descricao"
                           label="Descrição"
                         ></v-text-field>
                       </v-col>
-                      <v-col cols="12" sm="6" md="4">
+                      <v-col cols="12" sm="6" md="6">
+                        Valor que será cobrado
                         <money  v-model="editedItem.valor" v-bind="money"></money> 
                       </v-col>
                       <v-col cols="12" sm="6" md="4"> </v-col>
@@ -110,7 +111,7 @@ export default {
         sortable: false,
         value: "descricao",
       },
-      { text: "Valor", value: "valor" },
+      { text: "Valor que será cobrado", value: "valor" },
       { text: "Actions", value: "actions", sortable: false },
     ],
     opcoes: [],

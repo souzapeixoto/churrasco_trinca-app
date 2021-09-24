@@ -52,7 +52,7 @@
               Clique aqui!
             </v-btn><br/>
             <span class="caption grey--text font-weight-light"
-              >Agenda Mestre since 2017</span
+              >Churras Trinca since 2021</span
             >
           </v-card-text>
         </v-card>
@@ -101,12 +101,12 @@ export default {
 
           // ir para a home do sistema
           //location.href = '/index';
-          self.$router.push({ name: "churrasco" });
+          self.$router.push({ name: "churrascos" });
         })
         .catch(function(error) {
           self.$toast.error(
             error.response
-              ? error.response.data.error_description
+              ? error.response.data
               : "Não foi possivel realizar o login, tente mais tarde."
           );
         });

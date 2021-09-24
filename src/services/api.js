@@ -22,6 +22,7 @@ const setToken = (token) => {
   console.log(`Set token: ${cutToken}`)
   localStorage.setItem(STORAGE_TOKEN_KEY, token)
   axios.defaults.headers['Authorization'] = 'Bearer ' + token
+  axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
 }
 
 const setRefreshToken = (token) => {
@@ -126,7 +127,7 @@ axios.interceptors.response.use(null, (err) => {
 
   return Promise.reject(err)
 })
-axios.defaults.baseURL = "https://localhost:44393/Api/";
+axios.defaults.baseURL = "https://osvaldo2109241000.bateaquihost.com.br/Api/" //"https://localhost:44393/Api/"; 
  axios.headers = {
   Accept: 'application/json, application/xml, text/plain, text/html, *.*',
   "Content-Type": "application/json,  Content-Type: multipart/form-data",

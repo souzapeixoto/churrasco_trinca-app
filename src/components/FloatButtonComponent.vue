@@ -9,7 +9,7 @@
     
   >
     <template v-slot:activator>
-      <v-btn v-model="fab" color="blue darken-2" dark fab x-large>
+      <v-btn v-model="fab" color="primary" dark fab x-large>
         <v-icon v-if="fab">
           mdi-emoticon-cool
         </v-icon>
@@ -21,7 +21,7 @@
     <v-tooltip disabled left :value="true" >
         <template v-slot:activator="{ on, attrs }">
             <v-btn v-bind="attrs" 
-          v-on="on" fab dark small color="green" slot="activator" @click='goToNewChurras()'>
+          v-on="on" fab dark small color="#d3b933" slot="activator" @click='goToNewChurras()'>
       <v-icon>mdi-grill</v-icon>
     </v-btn>
         </template>
@@ -31,7 +31,7 @@
     <v-tooltip disabled left :value="true" >
         <template v-slot:activator="{ on, attrs }">
             <v-btn v-bind="attrs" 
-          v-on="on" fab dark small color="green" slot="activator" @click='goToChurrascos()'>
+          v-on="on" fab dark small color="#d3b933" slot="activator" @click='goToChurrascos()'>
       <v-icon>mdi-calendar-heart</v-icon>
     </v-btn>
         </template>
